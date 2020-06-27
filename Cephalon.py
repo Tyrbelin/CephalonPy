@@ -5,8 +5,7 @@ import json
 from discord.ext import commands
 
 token = os.environ["BOT_TOKEN"]
-game = discord.Game("Warframe")
-bot = commands.Bot(command_prefix='!',status=discord.Status.online,activity=game)
+bot = commands.Bot(command_prefix='!',status=discord.Status.online)
 
 @bot.event
 async def on_ready():
